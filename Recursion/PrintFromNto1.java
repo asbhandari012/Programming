@@ -1,19 +1,17 @@
-
 import java.util.*;
 
-public class PrintingNumber1toN {
+public class PrintFromNto1 {
 
     public static void recursion(int n){
         if(n == 0){
             return;
         }
-
+        System.out.println(n);
         recursion(n-1);
-        System.out.print(n + " ");
     }
     
 
-    public static void main(String args[]){
+    public static void main(String[] args) {
         Scanner ui = new Scanner(System.in);
 
         int n = ui.nextInt();
